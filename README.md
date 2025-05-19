@@ -39,7 +39,7 @@ In essence, GitHub turns Git's decentralized architecture into a global collabor
    Browse the available projects and pick one that:
    - contains a small bug (e.g. a typo or logical mistake),
    - could benefit from an enhancement (e.g. clearer instructions or additional explanation), or
-   - is missing something (e.g. a README section or link).
+   - is missing something (e.g. a README section or link).git add
 
    **Tip**: Focus on repositories that contain Markdown exercises, as these are ideal for first contributions.
 
@@ -111,21 +111,32 @@ git merge upstream/main
 
 1. **What is the difference between a GitHub fork and a local Git clone?**  
    Hint: Think about ownership, visibility, and where the copy lives.
+   GitHub Fork = working Online, its public if original is public
+   Git clone = working offline, noone can see ur local repos.
 
-2. **Why should you create a new branch before editing, even in your own fork?**  
+3. **Why should you create a new branch before editing, even in your own fork?**  
    How does this help keep your work clean and modular?
+   so if my changes wouldnt be accepted i just dont need to think about anythink and delete my commit.
 
-3. **What happens when you push changes to your fork, but the original repository has changed in the meantime?**  
+4. **What happens when you push changes to your fork, but the original repository has changed in the meantime?**  
    How can you make sure your pull request will not cause merge conflicts?
-
-4. **How can you update your fork to reflect changes from the upstream repository?**  
+   git remote add upstream https://github.com/owner/Repo.git
+   git fetch upstream
+   
+6. **How can you update your fork to reflect changes from the upstream repository?**  
    Try to describe the purpose of `git remote add upstream` and `git fetch`.
 
-5. **Why do open-source maintainers prefer contributions via pull requests rather than giving direct write access?**  
+7. **Why do open-source maintainers prefer contributions via pull requests rather than giving direct write access?**  
    Think in terms of trust, control, and quality assurance.
+   Some sort of people would have fun to ruin projects.
 
-6. **What information should a good pull request contain?**  
+9. **What information should a good pull request contain?**  
    Consider both the technical and the social aspects (e.g., commit message, explanation, tone).
+
+   1.Greetings
+   2.Clear Title
+   3.Description of what was done
+   4 Be polite and concise.
 
 
 ## 4) Advice
